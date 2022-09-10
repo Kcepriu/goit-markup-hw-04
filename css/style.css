@@ -20,7 +20,11 @@
   --padding-container: 15px;
 }
 
-/* Global */
+/**
+  |============================
+  |Global parametrs 
+  |============================
+*/
 body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -126,7 +130,7 @@ img {
   border-bottom: 1px solid var(--border-header-color);
 }
 
-.header-page .main-nav {
+.main-nav {
   display: flex;
   align-items: center;
 }
@@ -211,7 +215,7 @@ img {
   text-transform: uppercase;
 }
 
-.hero .button {
+.hero-button {
   padding: 10px 32px;
 
   font-weight: 700;
@@ -225,7 +229,7 @@ img {
   |============================
 */
 
-.section-title {
+.title-section {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
@@ -240,22 +244,22 @@ img {
   | Benefits section
   |============================
 */
-.section.benefit {
+.benefits {
   padding-bottom: 47px;
 }
 
-.benefits {
+.card-benefit {
   display: flex;
 
   font-size: 14px;
   line-height: 1.71;
 }
 
-.benefits .item + .item {
+.card-benefit-item + .card-benefit-item {
   margin-left: var(--indent);
 }
 
-.benefits .title {
+.card-benefit-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -273,13 +277,13 @@ img {
   padding-top: 47px;
 }
 
-.what-to-do {
+.card-what {
   display: flex;
   justify-content: space-between;
 }
 
 /* Здається це зайве. Попередній пункт все виставив вірно */
-/* .what-to-do .item + .item {
+/* .card-what-item + .card-what-item {
   margin-left: var(--indent);
 } */
 
@@ -288,18 +292,18 @@ img {
   |Team  section 
   |============================
 */
-.teams {
-  display: flex;
-  justify-content: space-between;
-}
-
 .team {
   font-size: 16px;
   line-height: 1.19;
   background-color: var(--second-color-background);
 }
 
-.team .title {
+.cards-team {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-team-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
   /* font-size - не наслідує з попереднього. Чомусь перекриває h3 таблиці стлів користувача */
@@ -308,15 +312,14 @@ img {
   font-weight: 500;
 }
 
-.team .item {
+.card-team-item {
   background-color: var(--primary-color-background);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 }
 
-.item .caption {
-  padding-top: var(--indent);
-  padding-bottom: var(--indent);
+.card-team-caption {
+  padding: var(--indent) 10px;
   text-align: center;
 }
 
@@ -329,43 +332,28 @@ img {
   display: flex;
   justify-content: center;
 
-  /* TODO переробити після здачі на  gap
-  розкоментувати */
-  /* gap: 8px; */
-
   margin-bottom: 50px;
 }
 
-/* TODO переробити після здачі на  gap
-видалити цей розділ */
-.portfolio-filter .item + .item {
+.btn-filter-item + .btn-filter-item {
   margin-left: 8px;
 }
 
-.card-set {
+.portfolio-card {
   display: flex;
   flex-wrap: wrap;
 
-  /* TODO переробити після здачі на  gap
-  розкоментувати і видалити маржини*/
-  /* gap: var(--indent); */
-  margin-left: calc(-1 * var(--indent));
-  margin-top: calc(-1 * var(--indent));
+  gap: var(--indent);
 
   font-size: 16px;
   line-height: 1.88;
 }
 
-.card-set .item {
-  flex-basis: calc(
-    (100% - calc(2 * var(--padding-container)) - (var(--items) - 1) * var(--indent)) / var(--items)
-  );
-
-  margin-left: var(--indent);
-  margin-top: var(--indent);
+.portfolio-card-item {
+  flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
 }
 
-.card-set .card-content > .title {
+.portfolio-card-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -375,11 +363,11 @@ img {
   margin-bottom: 4px;
 }
 
-.card-set .link:visited {
+.portfolio-card .link:visited {
   color: inherit;
 }
 
-.card-set .card-content {
+.portfolio-card-content {
   padding: 20px 24px;
   margin: 0;
 
@@ -387,6 +375,7 @@ img {
   border-right: 1px solid var(--border-portfolio-border);
   border-bottom: 1px solid var(--border-portfolio-border);
 }
+
 /**
   |============================
   |Sectiuon Footer 
@@ -399,23 +388,23 @@ img {
   background-color: var(--dark-color-background);
 }
 
-.footer-page .address {
+.address {
   color: var(--footer-text-color);
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
 }
 
-.footer-page .address.address-map {
+.address-map {
   color: var(--primary-white-color);
 }
 
-.address-list .item + .item {
+.address-item + .address-item {
   margin-top: 9px;
 }
 
-.footer-page .address:hover,
-.footer-page .address:focus {
+.address:hover,
+.address:focus {
   color: var(--accent-color);
 }
 
