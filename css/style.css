@@ -12,12 +12,17 @@
   --primary-color-background: #ffffff;
   --second-color-background: #f5f4fa;
   --dark-color-background: #2f303a;
+
   --border-header-color: #ececec;
+
   --border-portfolio-border: #eeeeee;
 
   --items: 3;
   --indent: 30px;
+
   --padding-container: 15px;
+  --padding-section: 94px;
+  --width-container: 1200px;
 }
 
 /**
@@ -71,12 +76,12 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  width: 1200px;
+  width: var(--width-container);
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
 }
 
 .visually-hidden {
