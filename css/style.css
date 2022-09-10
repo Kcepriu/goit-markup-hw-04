@@ -88,7 +88,11 @@ img {
   margin: -1px;
 }
 
-/* Logo */
+/**
+  |============================
+  |Logo 
+  |============================
+*/
 .logo {
   font-family: raleway, sans-serif;
   font-weight: 700;
@@ -96,12 +100,12 @@ img {
   line-height: 1.19;
 }
 
-.header-page .logo {
+.header-logo {
   color: var(--logo-header-color);
   margin-right: 93px;
 }
 
-.footer-page .logo {
+.footer-logo {
   margin-bottom: 20px;
   display: inline-block;
 
@@ -112,7 +116,11 @@ img {
   color: var(--accent-color);
 }
 
-/* Section Header */
+/**
+  |============================
+  |Section Header 
+  |============================
+*/
 .header-page {
   background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--border-header-color);
@@ -123,7 +131,11 @@ img {
   align-items: center;
 }
 
-/* Site nav */
+/**
+  |============================
+  |Site nav 
+  |============================
+*/
 .site-nav,
 .auth-nav {
   display: flex;
@@ -170,7 +182,11 @@ img {
   color: inherit;
 }
 
-/* Hero section*/
+/**
+  |============================
+  |Hero section 
+  |============================
+*/
 .hero {
   text-align: center;
 
@@ -203,7 +219,12 @@ img {
   line-height: 1.88;
 }
 
-/* Title section */
+/**
+  |============================
+  | Title section
+  |============================
+*/
+
 .section-title {
   margin-bottom: 50px;
 
@@ -214,7 +235,11 @@ img {
   text-align: center;
 }
 
-/* Benefits section*/
+/**
+  |============================
+  | Benefits section
+  |============================
+*/
 .section.benefit {
   padding-bottom: 47px;
 }
@@ -239,7 +264,11 @@ img {
   text-transform: uppercase;
 }
 
-/* Section What to do */
+/**
+  |============================
+  |Section What to do 
+  |============================
+*/
 .what {
   padding-top: 47px;
 }
@@ -254,7 +283,11 @@ img {
   margin-left: var(--indent);
 } */
 
-/* Team  section*/
+/**
+  |============================
+  |Team  section 
+  |============================
+*/
 .teams {
   display: flex;
   justify-content: space-between;
@@ -287,7 +320,11 @@ img {
   text-align: center;
 }
 
-/* Portfolio section*/
+/**
+  |============================
+  |Portfolio section 
+  |============================
+*/
 .portfolio-filter {
   display: flex;
   justify-content: center;
@@ -350,8 +387,11 @@ img {
   border-right: 1px solid var(--border-portfolio-border);
   border-bottom: 1px solid var(--border-portfolio-border);
 }
-
-/* Sectiuon Footer */
+/**
+  |============================
+  |Sectiuon Footer 
+  |============================
+*/
 .footer-page {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -379,7 +419,11 @@ img {
   color: var(--accent-color);
 }
 
-/* Button */
+/**
+  |============================
+  |Button 
+  |============================
+*/
 .button {
   min-width: 73px;
   padding: 6px 22px;
