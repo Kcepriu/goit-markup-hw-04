@@ -190,7 +190,6 @@ img {
 }
 
 .icontact-nav .link {
-  /* display: block; */
   display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -198,7 +197,15 @@ img {
   color: inherit;
 }
 
-.icontact-nav .link::before {
+.icon-contact {
+  margin-right: 10px;
+  fill: currentColor;
+  /* --icon-color: currentColor; */
+  --color3: currentColor;
+
+  /* fill: red; */
+}
+/* .icontact-nav .link::before {
   content: '';
   margin-right: 10px;
 
@@ -206,6 +213,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 .contact-mail::before {
   background-image: url(../images/envelope.svg);
@@ -215,7 +223,7 @@ img {
 .contact-tel::before {
   background-image: url(../images/smartphone.svg);
   width: 10px;
-}
+} */
 /**
   |============================
   |Hero section 
@@ -231,6 +239,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
+  width: 1600px;
 }
 
 .hero-content {
@@ -521,6 +531,8 @@ img {
   padding-bottom: 60px;
 
   background-color: var(--dark-color-background);
+  width: 1600px;
+  margin: 0 auto;
 }
 
 .wrap-address {
