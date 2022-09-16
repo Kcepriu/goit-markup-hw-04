@@ -180,6 +180,37 @@ img {
 
 /**
   |============================
+  |Button 
+  |============================
+*/
+.button {
+  min-width: 73px;
+  padding: 6px 22px;
+
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+
+  font-family: inherit;
+  letter-spacing: inherit;
+
+  background-color: var(--second-color-background);
+  cursor: pointer;
+
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/**
+  |============================
   |Section Header 
   |============================
 */
@@ -265,7 +296,7 @@ img {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  width: 1600px;
+  max-width: 1600px;
 }
 
 .hero-content {
@@ -445,7 +476,7 @@ img {
 
   color: var(--primary-color-icon);
 
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
 
   width: 170px;
   height: 92px;
@@ -503,7 +534,12 @@ img {
   flex-basis: calc((100% - (var(--items) - 1) * var(--indent)) / var(--items));
 }
 
-.portfolio-card-item:hover {
+.link-porfolio {
+  display: block;
+}
+
+.link-porfolio:hover,
+.link-porfolio:focus {
   box-shadow: var(--shadow-portfolio-card);
 }
 
@@ -591,35 +627,4 @@ img {
   text-align: left;
 
   color: var(--primary-white-color);
-}
-
-/**
-  |============================
-  |Button 
-  |============================
-*/
-.button {
-  min-width: 73px;
-  padding: 6px 22px;
-
-  color: var(--title-text-color);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-
-  font-family: inherit;
-  letter-spacing: inherit;
-
-  background-color: var(--second-color-background);
-  cursor: pointer;
-
-  border: none;
-  border-radius: var(--border-radius);
-}
-
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
 }
